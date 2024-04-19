@@ -41,6 +41,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation (name: 'binance_pay_sdk_v1.1.0', ext: 'aar')
+    compileOnly fileTree(include: ['*'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
