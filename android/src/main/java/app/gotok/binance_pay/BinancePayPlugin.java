@@ -38,7 +38,7 @@ public class BinancePayPlugin implements FlutterPlugin, MethodCallHandler  {
     if (call.method.equals("init")) {
       String merchantId = (String) call.argument("merchantId");
       String prepayId = (String) call.argument("prepayId");
-      Long timeStamp = (Long) call.argument("timestamp");
+      Integer timeStamp = (Long) call.argument("timestamp");
       String nonceStr = (String) call.argument("noncestr");
       String certSn = (String) call.argument("certSn");
       String sign = (String) call.argument("sign");
